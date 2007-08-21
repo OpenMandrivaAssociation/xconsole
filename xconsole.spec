@@ -34,6 +34,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xconsole
 %{_datadir}/X11/app-defaults/XConsole
-%{_mandir}/man1/xconsole.1x.bz2
+%{_mandir}/man1/xconsole.*
 
 

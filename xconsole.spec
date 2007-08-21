@@ -1,7 +1,7 @@
 Name: xconsole
 Version: 1.0.2
 Release: %mkrel 3
-Summary: monitor system console messages with X
+Summary: Monitor system console messages with X
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT

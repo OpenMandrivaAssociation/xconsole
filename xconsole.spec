@@ -1,6 +1,6 @@
 Name: xconsole
 Version: 1.0.3
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Monitor system console messages with X
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -18,6 +18,7 @@ The xconsole program displays messages which are usually sent to /dev/console.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 

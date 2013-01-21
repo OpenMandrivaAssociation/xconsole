@@ -1,11 +1,10 @@
 Name: xconsole
-Version: 1.0.4
+Version: 1.0.5
 Release: %mkrel 4
 Summary: Monitor system console messages with X
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxaw-devel >= 1.0.1
@@ -22,14 +21,9 @@ The xconsole program displays messages which are usually sent to /dev/console.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xconsole
 %{_datadir}/X11/app-defaults/XConsole
 %{_mandir}/man1/xconsole.*

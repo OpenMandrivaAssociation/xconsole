@@ -10,11 +10,14 @@ BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxaw-devel >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
 
+Patch0:		xconsole-aarch64.patch
+
 %description
 The xconsole program displays messages which are usually sent to /dev/console.
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
 %configure2_5x

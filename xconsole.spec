@@ -1,6 +1,6 @@
 Name: xconsole
-Version: 1.0.5
-Release: %mkrel 4
+Version: 1.0.6
+Release: 1
 Summary: Monitor system console messages with X
 Group: Development/X11
 Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -9,8 +9,6 @@ License: MIT
 BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxaw-devel >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
-
-Patch0:		xconsole-aarch64.patch
 
 %description
 The xconsole program displays messages which are usually sent to /dev/console.

@@ -1,5 +1,5 @@
 Name:		xconsole
-Version:	1.1.0
+Version:	1.1.1
 Release:	1
 Summary:	Monitor system console messages with X
 Group:		Development/X11
